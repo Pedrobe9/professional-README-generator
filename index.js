@@ -68,17 +68,30 @@ const questions = [
     },
 ];
 
+function promptUser() {
+  return inquirer.prompt(questions);
+}
+
 // function to write README file
 function writeToFile(fileName, data) {
 }
 
-// function to initialize program
-function init() {
-console.log("-----------------init funct-------------------");
-const data = promptUser();
-const md = generateMarkdown(data);
-writeToFile('readme.md', data);
-console.log('readme.md file successfully written');
+// function to initialize program. async before a function makes the function return a promise
+// Functions running in parallel with other functions are called asynchronous
+async function init() {
+  console.log("-----------------init funct-------------------");
+  // try statement allows you to define a block of code to be tested for errors while it is being executed.
+  try {
+    // await makes a function wait for a Promise
+    const data = await promptUser();
+    const md = generateMarkdown(data);
+    await writeToFileAsync('README.md', md);
+    console.log('README.md file successfully written');
+    // catch statement defines a code block to handle any error.
+  } catch (err) {
+    console.log(err);
+  }
+
 }
 
 // function call to initialize program
