@@ -14,7 +14,7 @@ const questions = [
     {
       type: 'input',
       name: 'title',
-      message: 'What is your project title?',
+      message: 'Enter the information required by the prompts. If anything does not apply, enter N/A.\nWhat is your project title?',
     },
     {
       type: 'input',
@@ -23,18 +23,28 @@ const questions = [
     },
     {
       type: 'input',
-      name: 'contentTable',
-      message: 'Add a table of content to make easy for users to find what they are looking for:',
+      name: 'deployed',
+      message: 'Write the URL where the application can be found deployed:',
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'Describe the steps to install the porject:',
+      message: 'Describe the steps to install the application:',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'Provide instructuios on how to use the project, inclusing examples and screenshots:'
+      message: 'Provide instructuios on how to use the project, inclusing examples:'
+    },
+    {
+      type: 'input',
+      name: 'screenshots',
+      message: 'Provide screenshot exemplifying the usage. Screenshot must be included in the directory "screeshots" and the file name entered here:'
+    },
+    {
+      type: 'input',
+      name: 'altText',
+      message: 'Provide alternative text descriptive of the screenshot:'
     },
     {
       type: 'input',
@@ -46,6 +56,11 @@ const questions = [
       name: 'license',
       message: 'What type of license do you want to include in your project?'
     },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Enter an email, so any issues can be reported by the user:'
+    }, 
     {
       type: 'input',
       name: 'badges',
