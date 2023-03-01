@@ -27,7 +27,7 @@ function generateMarkdown(data) {
   ## Usage:
   ${data.usage}\n
   Screenshots illustrating the application usage:\n
-  ![${data.altText}](./screenshots/${data.screenshots})
+  ![${data.altText}](./images/${data.screenshots})
 
 
   ## License:
@@ -38,9 +38,11 @@ function generateMarkdown(data) {
   ${data.credits}
 
 
-  ## Report Issues:
-  If you need to report any issues with the application, write to the email:\n
-  ${data.email}
+  ## Questions / Report Issues:
+  If you need to report any issues with the application, or ask any questions, write to the email:\n
+  ${data.email}\n
+  or contact GitHub profile:\n
+  ${data.github}
 
 
   ## Badges:
@@ -54,7 +56,7 @@ function generateMarkdown(data) {
   ## Contribution:
   ${data.contribution}
 
-  
+
   ## Test:
   ${data.test}
 `;

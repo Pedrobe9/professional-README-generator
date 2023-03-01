@@ -63,6 +63,11 @@ const questions = [
     }, 
     {
       type: 'input',
+      name: 'github',
+      message: 'Enter a link to your GitHub profile:'
+    }, 
+    {
+      type: 'input',
       name: 'badges',
       message: 'Include any badges to show credentials:'
     }, 
