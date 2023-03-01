@@ -41,8 +41,8 @@ function generateMarkdown(data) {
   ## Questions / Report Issues:
   If you need to report any issues with the application, or ask any questions, write to the email:\n
   ${data.email}\n
-  or contact GitHub profile:\n
-  ${data.github}
+  or contact GitHub username profile:\n
+  https://github.com/${data.github}
 
 
   ## Badges:
