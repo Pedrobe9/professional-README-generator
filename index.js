@@ -109,6 +109,7 @@ async function init() {
   try {
     // await makes a function wait for a Promise
     const data = await promptUser();
+
     const md = generateMarkdown(data);
     await writeToFileAsync('README.md', md);
     console.log('README.md file successfully written');
