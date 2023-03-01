@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   var badge1, badge2;
-  console.log("data.license: ", data.license[0]);
   switch (data.license[0]) {
     case 'GNU AGPLv3': {
       badge1 = 'License: AGPL v3'; 
@@ -44,13 +43,14 @@ function generateMarkdown(data) {
       break;
     }
       default:
-        console.log("data.license not valid");
+        console.log("data.license not in the list.");
   }
-  console.log("badge1, badge2: ", badge1, badge2);
   return `# ![${badge1}](${badge2})  ${data.title}
 
   ## Description:
   ${data.description}\n
+  The application can be found in the GITHUB repo:
+  ${data.githubRepo}\n
   The application can be found deployed at:\n
   ${data.deployed}
 
@@ -60,11 +60,11 @@ function generateMarkdown(data) {
   - [Usage](#usage)  
   - [License](#license)
   - [Credits](#credits)
-  - [Report Issues](#reportIssues)
+  - [Questions / Report Issues](#reportIssues)
   - [Badges](#badges)
   - [Features](#features)
-  - [Contribution](#contribution)
-  - [Test](#test)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
 
 
   ## Installation:
@@ -100,11 +100,11 @@ function generateMarkdown(data) {
   ${data.features}
 
 
-  ## Contribution:
+  ## Contributing:
   ${data.contribution}
 
 
-  ## Test:
+  ## Tests:
   ${data.test}
 `;
 }

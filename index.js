@@ -14,12 +14,17 @@ const questions = [
   {
     type: 'input',
     name: 'title',
-    message: 'Enter the information required by the prompts. If anything does not apply, enter N/A.\nWhat is your project title?\n',
+    message: 'Enter the information required by the prompts. If anything does not apply, enter N/A.\nWhat is your project/application title?\n',
   },
   {
     type: 'input',
     name: 'description',
-    message: 'Write a description for your project:\n',
+    message: 'Write a description for your project/application:\n',
+  },
+  {
+    type: 'input',
+    name: 'githubRepo',
+    message: 'Write the URL of the GitHub repository where the application can be found:\n',
   },
   {
     type: 'input',
@@ -34,12 +39,12 @@ const questions = [
   {
     type: 'input',
     name: 'usage',
-    message: 'Provide instructions on how to use the project, including examples:\n',
+    message: 'Provide instructions on how to use the application, including examples:\n',
   },
   {
     type: 'input',
     name: 'screenshots',
-    message: 'Provide screenshot exemplifying the usage. Screenshot must be included in the directory "screeshots" and the file name entered here:\n',
+    message: 'Provide a screenshot exemplifying the usage. Screenshot must be included in the directory "images" and the file name entered here:\n',
   },
   {
     type: 'input',
@@ -54,17 +59,13 @@ const questions = [
   {
     type: 'checkbox',
     name: 'license',
-    message: 'Do you want to include a license? If you need help choosing here you have some common open source licenses https://choosealicense.com/licenses/\nWhat type of license do you want to include in your project?\n',
+    message: 'It is good practice to include a license. If you need help choosing one, here you have some common open source licenses https://choosealicense.com/licenses/\nWhat type of license do you want to include in your application?\n',
     choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
-    /*choices: ['[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)]', '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]', 
-    '[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)]', '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]', 
-    '[![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]', '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]', 
-    '[![License: Boost](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]', '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]'],*/
   },
   {
     type: 'input',
     name: 'email',
-    message: 'Enter an email, so any issues can be reported by the user:\n',
+    message: 'Enter an email, so any issues can be reported to the user:\n',
   },
   {
     type: 'input',
@@ -79,16 +80,16 @@ const questions = [
   {
     type: 'input',
     name: 'features',
-    message: 'List the features of your project:\n',
+    message: 'List the features of your application:\n',
   },
   {
     type: 'input',
-    name: 'contribution',
-    message: 'Write how anyone can contribute to your project:\n',
+    name: 'contributing',
+    message: 'Write how anyone can contribute to your application:\n',
   },
   {
     type: 'input',
-    name: 'test',
+    name: 'tests',
     message: 'Write tests for your application and provide examples on how to run them:\n',
   },
 ];
