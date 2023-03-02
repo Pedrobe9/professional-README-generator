@@ -49,7 +49,7 @@ function generateMarkdown(data) {
 
   ## Description:
   ${data.description}\n
-  The application can be found in the GITHUB repository:
+  The application can be found in the GITHUB repository:\n
   ${data.githubRepo}\n
   The application can be found deployed at:\n
   ${data.deployed}
@@ -60,7 +60,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)  
   - [License](#license)
   - [Credits](#credits)
-  - [Questions / Report Issues](#reportIssues)
+  - [Questions](#questions)
   - [Badges](#badges)
   - [Features](#features)
   - [Contributing](#contributing)
@@ -85,7 +85,7 @@ function generateMarkdown(data) {
   ${data.credits}
 
 
-  ## Questions / Report Issues:
+  ## Questions:
   If you need to report any issues with the application, or ask any questions, write to the email:\n
   ${data.email}\n
   or contact GitHub username profile:\n
@@ -105,7 +105,7 @@ function generateMarkdown(data) {
 
 
   ## Tests:
-  ${data.test}
+  ${data.tests}
 `;
 }
 

@@ -8,7 +8,7 @@
 
   The application can be found deployed at:
 
-  n/a
+  https://youtu.be/zg_CKhS1MUs
 
 
   ## Table of Content:
@@ -16,7 +16,7 @@
   - [Usage](#usage)  
   - [License](#license)
   - [Credits](#credits)
-  - [Questions / Report Issues](#reportIssues)
+  - [Questions](#questions)
   - [Badges](#badges)
   - [Features](#features)
   - [Contributing](#contributing)
@@ -32,7 +32,7 @@
 
   Screenshots illustrating the application usage:
 
-  ![Screen recording of application.](./images/n/a)
+  ![Screen recording of application.](./images/./images/readme-generator.webm)
 
 
   ## License:
@@ -43,7 +43,7 @@
   N/A.
 
 
-  ## Questions / Report Issues:
+  ## Questions:
   If you need to report any issues with the application, or ask any questions, write to the email:
 
   pedrobe9@gmail.com
@@ -58,7 +58,7 @@
 
 
   ## Features:
-  N/A.
+  The features of this application are input of data in command line and README.md creation.
 
 
   ## Contributing:
@@ -66,4 +66,4 @@
 
 
   ## Tests:
-  undefined
+  N/A.
