@@ -4,11 +4,12 @@
   The application will prompt the user for information through the command line and construct automatically a README.md file using the information entered by the user.
 
   The application can be found in the GITHUB repository:
+
   https://github.com/Pedrobe9/professional-README-generator
 
   The application can be found deployed at:
-
-  https://youtu.be/zg_CKhS1MUs
+  https://youtu.be/8youflPpQv8       or    
+  https://drive.google.com/file/d/1h0EEzwdVoFzOF57CwU8FwfUeTWB5REy4/view?usp=share_link 
 
 
   ## Table of Content:
@@ -32,7 +33,7 @@
 
   Screenshots illustrating the application usage:
 
-  ![Screen recording of application.](./images/./images/readme-generator.webm)
+  ![Screenshot of application.](images/readme-generator.png)
 
 
   ## License:
@@ -54,16 +55,16 @@
 
 
   ## Badges:
-  N/A.
+  M/A
 
 
   ## Features:
-  The features of this application are input of data in command line and README.md creation.
+  N/A
 
 
   ## Contributing:
-  N/A.
+  N/A
 
 
   ## Tests:
-  N/A.
+  N/A
