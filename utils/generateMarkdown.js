@@ -49,7 +49,7 @@ function generateMarkdown(data) {
 
   ## Description:
   ${data.description}\n
-  The application can be found in the GITHUB repo:
+  The application can be found in the GITHUB repository:
   ${data.githubRepo}\n
   The application can be found deployed at:\n
   ${data.deployed}
@@ -101,7 +101,7 @@ function generateMarkdown(data) {
 
 
   ## Contributing:
-  ${data.contribution}
+  ${data.contributing}
 
 
   ## Tests:

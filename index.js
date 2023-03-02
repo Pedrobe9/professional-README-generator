@@ -44,7 +44,7 @@ const questions = [
   {
     type: 'input',
     name: 'screenshots',
-    message: 'Provide a screenshot exemplifying the usage. Screenshot must be included in the directory "images" and the file name entered here:\n',
+    message: 'Provide a screenshot (or screen recording) exemplifying the usage. Screenshot (screen recording) must be included in the directory "images" and the file name entered here:\n',
   },
   {
     type: 'input',
@@ -105,7 +105,6 @@ function writeToFile(fileName, data) {
 // function to initialize program. async before a function makes the function return a promise
 // Functions running in parallel with other functions are called asynchronous
 async function init() {
-  console.log("-----------------init funct-------------------");
   // try statement allows you to define a block of code to be tested for errors while it is being executed.
   try {
     // await makes a function wait for a Promise
